@@ -15,6 +15,7 @@ class nav extends React.Component {
             opacity: '0.99',
             boxShadow: '7px 7px 15px #0c05007a',
 
+
         }
 
         const customLogo = {
@@ -36,9 +37,15 @@ class nav extends React.Component {
         }
 
         const customStyleLi = {
-
+            listStyle: 'none',
+            fontSize: '14px',
+            fontWeight: '900',
+            color: 'rgb(89, 6, 167, 0.696)'
         }
 
+        const customStyleA = {
+            textDecoration: 'none',
+        }
 
 
         const customStyleChildNav = {
@@ -46,7 +53,13 @@ class nav extends React.Component {
             justifyContent: 'space-around',
         }
 
-
+        const customStyleButton = {
+            padding: '10px',
+            backgroundColor: 'rgb(89, 6, 167, 0.696)',
+            color: '#fff',
+            fontSize: '18px',
+            borderRadius: '50%'
+        }
 
         return (
             <div style={customStyleContainer} >
@@ -55,19 +68,19 @@ class nav extends React.Component {
 
                 <nav style={customStyleNav}>
                     <ul style={customStyleChildNav}>
-                        <li>
-                            <a>Catalogo de  Productos</a>
+                        <li style={customStyleLi}>
+                            <a href='http://localhost:3000/' style={customStyleA}>Catalogo de  Productos</a>
                         </li>
-                        <li>
-                            <a>Ofertas y Promociones </a>
+                        <li style={customStyleLi}>
+                            <a href='http://localhost:3000/' style={customStyleA}>Ofertas y Promociones </a>
                         </li>
-                        <li>
-                            <a>Contectenos</a>
+                        <li style={customStyleLi}>
+                            <a href='http://localhost:3000/' style={customStyleA}>Contectenos</a>
                         </li>
                     </ul>
 
                 </nav>
-                <button>login</button>
+                <button style={customStyleButton}>Login</button>
 
 
             </div>
