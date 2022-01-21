@@ -1,6 +1,7 @@
 import React from 'react';
 import carrito from './../img/carrito-de-compras.png'; // with import
 
+
 const cartwidget = () => {
 
     const customStyleContainer = {

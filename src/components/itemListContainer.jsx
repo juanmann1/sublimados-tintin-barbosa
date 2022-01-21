@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemCount from './ItemCount';
+import ItemList from './ItemList';
 
 const ItemListContainer = ({ props }) => {
 
@@ -11,9 +11,7 @@ const ItemListContainer = ({ props }) => {
     return (
         <div>
             <p style={customStylep}>{props}</p>
-            <ItemCount />
-
-
+            <ItemList />
         </div>
     )
 
