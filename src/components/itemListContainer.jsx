@@ -5,13 +5,16 @@ const ItemListContainer = ({ props }) => {
 
     const customStylep = {
         fontSize: '50px',
-        padding: '20px'
+        padding: '20px',
     }
 
     return (
-        <div>
+        <div >
             <p style={customStylep}>{props}</p>
-            <ItemList />
+            <div >
+                <ItemList />
+            </div>
+
         </div>
     )
 
